@@ -13,6 +13,7 @@
 ## Tasks Completed 
 - Pre-Development
     - Ideation Phase
+        -  [x] Brainstorming - Idea Generation - Prioritization<br>
         -  [x] Literature Survey <br>
         -  [x] Empathy Map <br>
         -  [x] Problem Statement <br>
