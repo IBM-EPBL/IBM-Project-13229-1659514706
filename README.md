@@ -11,7 +11,23 @@
     </div>
  
 ## Tasks Completed 
-- Pre-Development
+- Project Objectives
+    - [] Project Objective<br>
+- Pre-requisites
+    - [x] Pre-requisites<br>
+- Data Collecction
+    - [x] Download the dataset<br>
+- Data Preprocessing
+    - [x] Import Required Libraries<br>
+    - [x] Read the Datasets<br>
+    - [x] Check Null Values<br>
+    - [x] Removing Null Values<br>
+    - [x] Handling Null Values<br>
+- Model Building 
+    - [x] Separating Independent and Dependent Variables<br>
+    - [x] Splitting Data into Train and Test<br>
+    - [x] Applying Linear Regression<br>
+- Planning & Design
     - Ideation Phase
         -  [x] Brainstorming - Idea Generation - Prioritization<br>
         -  [x] Literature Survey <br>
@@ -26,6 +42,14 @@
         - [x] Data Flow Diagrams <br>
         - [x] Solution Requirements  <br>
         - [x] Technology Architecture <br>
+    - Project Planning
+        - [x] Milestone & Activity List<br>
+        - [x] Sprint Delivery Plan<br>
+- Project Development Phase
+    - [x] Sprint 1<br>
+    - [x] Sprint 2<br>
+    - [] Sprint 3<br>
+    - [] Sprint 4<br>
 - Assignments
     -  [x] Assignment 1 <br>
     -  [x] Assignment 2  <br>    
