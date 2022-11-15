@@ -99,7 +99,7 @@
         <div class="result">
             {{ prediction_text }}
         </div>
-        <form action="{{ url_for('y predict') }}" method="POST">
+        <form action="{{ url_for('y_predict') }}" method="POST">
             <input type="number" step="any" id="distance" name="distance" placeholder="distance(km)"> 
             <input type="number" id="speed" name="speed" placeholder="speed (km/h)"> 
             <input type="number" id="temp_inside" name="temp_insidet" placeholder="temp_inside(°C)"> 
@@ -116,3 +116,4 @@
 </body>
 
 </html>
+
