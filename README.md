@@ -12,7 +12,7 @@
  
 ## Tasks Completed 
 - Project Objectives
-    - [] Project Objective<br>
+    - [x] Project Objective<br>
 - Project Workflow
     - [x] Project Workflow<br>
 - Pre-requisites
