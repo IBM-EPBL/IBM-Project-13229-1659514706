@@ -13,6 +13,8 @@
 ## Tasks Completed 
 - Project Objectives
     - [] Project Objective<br>
+- Project Workflow
+    - [x] Project Workflow<br>
 - Pre-requisites
     - [x] Pre-requisites<br>
 - Data Collecction
