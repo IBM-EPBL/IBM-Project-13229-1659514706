@@ -1,12 +1,13 @@
+<!DOCTYPE html>
 <html>
+    <head>
+        <title>CarFuelConsumption</title>
+        <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-<head>
-    <title>
-        Prediction
-    </title>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <style>
-        * {
+
+        <style>
+            * {
             box-sizing: border-box;
         }
 
@@ -36,84 +37,73 @@
             font-size: 40px;
             text-align: center;
         }
-
-        .content {
-            margin-top: 100px;
-        }
-
-        .text {
-            font-size: 20px;
-            margin-top: 10px;
-            text-align: center;
-        }
-
-        input[type=number],
-        select {
-            width: 50%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        input[type=submit] {
-            width: 50%;
-            background-color: #000000;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #5d6568;
-            color: #ffffff;
-            border-color: black;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        .results {
-            color: black;
-            margin-top: 30px;
-            margin-bottom: 20px;
-            font-size: 25px;
-            color: red;
-        }
-    </style>
-</head>
-
-<body align=center>
-    <div class="header">
-        <div>Car Fuel Consumption </div>
-    </div>
-    <div class="content">
-        <div class="header_text">Car Fuel Consumption Prediction</div>
-        <div class="text">Fill in and below details to predict the consumption depending on the gas type. </div>
-        <div class="result">
-            {{ prediction_text }}
-        </div>
-        <form action="{{ url_for('y_predict') }}" method="POST">
-            <input type="number" step="any" id="distance" name="distance" placeholder="distance(km)"> 
-            <input type="number" id="speed" name="speed" placeholder="speed (km/h)"> 
-            <input type="number" id="temp_inside" name="temp_insidet" placeholder="temp_inside(°C)"> 
-            <input type="number" id="temp_outside" name="temp_outside" placeholder="temp_outside(°C)"> 
-            <input type="number" id="AC" name="AC" placeholder="AC"> 
-            <input type="number" id="rain" name="rain" placeholder="rain"> 
-            <input type="number" id="sun" name="sun" placeholder="sun"> 
-            <input type="number" id="E10" name="E10" placeholder="E10">
-            <input type="number" id="SP98" name="SP98" placeholder="SP98">
+            body{
+                text-align: center;
+            }
+            .title{
+                text-align: center;
+                color:#34568B;
+            }
+            table, th, td {
+                border: 1px solid;
+            }
+            input{
+                width: 30%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid black;
+                border-radius: 4px;
+                color: white;
+            }
+            .btn{                
+                padding:15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display:inline-block;
+                font-size:16px;
+                background-color: #34568B;
+                color: #ffffff;
+                border-color: #34568B;
+            }
             
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-</body>
-
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            <h1>Car Fuel Consumption Prediction</h1>
+        </div>
+        <div class="login">
+            <form action="{{url_for('predict')}}" method="post">
+                <label for="distance">Distance</label><br>
+                <input type="text" id="distance" placeholder="Distance" name="distance"><br>
+          
+                <label for="speed">Speed</label><br>
+                <input type="text" id="speed" placeholder="Speed" name="speed"><br>
+                
+                <label for="temp_inside">Temperature Inside</label><br>
+                <input type="text" id="temp_inside" placeholder="Temperature Inside" name="temp_inside"><br>
+              
+                <label for="temp_outside">Temperature Outside</label><br>
+                <input type="text" id="temp_outside" placeholder="Temperature Outside" name="temp_outside"><br>
+              
+                <label for="AC">AC</label><br>
+                <input type="text" id="AC" placeholder="AC" name="AC"><br>
+              
+                <label for="rain">Rain</label><br>
+                <input type="text" id="rain" placeholder="Rain" name="rain"><br>
+                
+                <label for="sun">Sun</label><br>
+                <input type="text" id="sun" placeholder="Sun" name="sun"><br>
+              
+                <label for="gas_types">Gas Types</label><br>
+                <input type="text" id="gas_types" placeholder="Gas Types" name="gas_types"><br>
+              
+                <br>
+                <button type="submit" class="btn" align="center">Predict</button>
+            </form>
+            <br>
+            {{ prediction_text}}
+        </div>
+    </body>
 </html>
-
