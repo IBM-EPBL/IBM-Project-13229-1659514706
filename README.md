@@ -51,7 +51,7 @@
     - [x] Sprint 1<br>
     - [x] Sprint 2<br>
     - [x] Sprint 3<br>
-    - [x] Sprint 4<br>
+    - [] Sprint 4<br>
 - Assignments
     -  [x] Assignment 1 <br>
     -  [x] Assignment 2  <br>    
