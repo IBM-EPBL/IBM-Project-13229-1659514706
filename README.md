@@ -57,6 +57,10 @@
     -  [x] Assignment 2  <br>    
     -  [x] Assignment 3  <br> 
     -  [x] Assignment 4  <br> 
+- Final Deliverables
+    - [x] Code<br>
+    - [x] Report<br>
+    - [x] Demo<br>
 <br>
  
 
